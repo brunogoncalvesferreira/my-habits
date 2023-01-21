@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #09090a;
+  color: white;
+
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 3rem;
+
+  position: fixed;
+  background-color: #09090a;
+  width: 100%;
+}
+
+button {
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #8b5cf6;
+  background-color: transparent;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  font-weight: 600;
+  line-height: 125%;
+  cursor: pointer;
+  transition: background 300ms;
+}
+
+button i {
+  color: #8b5cf6;
+  font-size: 1.5rem;
+}
+
+button:hover {
+  background-color: #8b5cf6;
+  border: 1px solid white;
+}
+
+button:hover i {
+  color: white;
+}
+
+form {
+  display: flex;
+  padding: 11.375rem 3rem 3rem;
+  width: fit-content;
+}
+
+.habits {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 3rem;
+
+  gap: 1.5rem;
+}
+
+.habit {
+  width: 4rem;
+  height: 4rem;
+
+  font-size: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.days {
+  display: flex;
+  gap: 3rem;
+  margin-left: 2rem;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.day div {
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 1.25rem;
+  list-style: 125%;
+  color: #a1a1aa;
+}
+
+input {
+  appearance: none;
+  -webkit-appearance: none;
+
+  width: 4rem;
+  height: 4rem;
+
+  border: 2px solid #27272a;
+  border-radius: 8px;
+
+  background-color: #18181b;
+  cursor: pointer;
+}
+
+input:checked {
+  border: 2px solid #a78bfa;
+  background-color: #8b5cf6;
+}
+
+@media (max-width: 570px) {
+  header button div {
+    display: none;
+  }
+}
